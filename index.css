@@ -1,0 +1,145 @@
+
+
+h1{
+    position: absolute;
+   left: 35%;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.pig{
+    position: relative;
+    
+   
+}
+.dance{
+    position: absolute;
+    display: flex;
+    gap: 15px;
+    top: 110px;
+    left: -70px;
+}
+h2{
+    opacity: 0;
+}
+.pig:hover{
+    
+    animation: dance .5s infinite;
+    
+}
+
+.pig:hover .dance h2{
+    animation: text .8s infinite;
+}
+.lear,.rear{
+    position: absolute;
+    top:-100px;
+    left: -50px;
+    height: 80px;
+    width: 60px;
+    background-color: pink;
+    border-radius: 50% 50% 7px 7px;
+    border: 2px solid black;
+}
+
+.rear{
+    left: 50px;
+}
+.pig:hover .lear,.pig:hover .rear{
+    animation: ears .3s infinite;
+}
+.face{
+    position: absolute;
+    top: -85px;
+    left: -70px;
+    height: 200px;
+    width: 200px;
+    background-color: pink;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.leye,.reye{
+    position: absolute;
+    top: 35px;
+    left: 30px;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
+.reye{
+    left: 120px;
+}
+.lpuple,.rpuple{
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+}
+.nose{
+    position: absolute;
+    top: 115px;
+    left: 55px;
+    height: 50px;
+    width: 90px;
+    background-color: red;
+    border-radius: 50px;
+    border: 2px solid black;
+}
+.hole1,.hole2{
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+}
+.hole2{
+    left: 55px;
+}
+
+@keyframes dance {
+    0%{
+        left: 10px;
+    }
+    50%{
+        left: -10px;
+    }
+    100%{
+        left: 10px;
+    }
+    
+}
+@keyframes text {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+@keyframes ears {
+    0%{
+        top: -100px;
+    }
+    50%{
+        top: -110px;
+    }
+    100%{
+        top: -100px;
+    }
+}
+
